@@ -1,0 +1,14 @@
+<h1>Editing Student</h1>
+
+<%= form_for @student do |f| %>
+  <%= f.label :first_name %><br>
+  <%= f.text_field :first_name %><br>
+
+  <%= f.label :last_name %><br>
+  <%= f.text_field :last_name %><br>
+  
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Show', @student %> |
+<%= link_to 'Back', students_path %>
